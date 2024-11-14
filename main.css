@@ -1,0 +1,63 @@
+header {
+    
+}
+
+section {
+    
+}
+
+img {
+    width: 33%;
+    height: auto;
+    filter: saturate(0);
+}
+
+a:hover img {
+    filter: saturate(1);
+}
+
+.title {
+    font-family: 'Helvetica';
+    color: #111;
+    font-size: 3em;
+    font-weight: 100;
+    color: #000;
+    margin: 1.000rem auto 0.875rem auto;
+    letter-spacing: -1px;
+    text-align: center;
+    max-width: 52.500rem;
+    text-transform: none;
+    width: 95%;
+    font-style: normal;
+
+}
+
+.subtitle {
+    font-size: 1.176em;
+    line-height: 135%;
+    color: #000000;
+    text-align: center;
+    font-family: 'Benton Sans', sans-serif;
+    font-weight: 100;
+    margin: 1.000rem auto 0.875rem auto;
+   
+}
+
+.description {
+    font-family: 'Benton Sans', Sans-Serif;
+    line-height: 135%;
+    color: #000000;
+    margin-bottom: 15px;
+    font-size: 11.5px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: 100;
+
+}
+
+.negativos {
+    width: 1300px;
+    height: auto;
+    margin: center;
+}
