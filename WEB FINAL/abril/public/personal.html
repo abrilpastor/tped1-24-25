@@ -1,0 +1,474 @@
+<!-- Abril Pastor | Photography Porfolio - Bootstrap 5.3 - Junio 2025 -->
+<!doctype html>
+<html lang="es-ES" data-bs-theme="auto">
+<head>
+	<meta charset="utf-8" />
+	<meta content="noindex, follow, noodp, noydir" name="robots" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+	<title>Abril Pastor | Photography Porfolio</title>
+
+	<!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap Icon Fonts -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+	<!-- js para control tema claro/oscuro -->
+	<script src="index.js" defer></script>
+
+	<!-- Estilos personalizados -->
+	 <link rel="stylesheet" href="./css/styles.css">
+	
+</head>
+
+<body style="padding-bottom: 100px;">
+	<!-- Iconos SVG control tema claro/oscuro -->
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+		<symbol id="circle-half" viewBox="0 0 16 16">
+			<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+		</symbol>
+
+		<symbol id="moon-stars-fill" viewBox="0 0 16 16">
+			<path
+				d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+			<path
+				d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+		</symbol>
+
+		<symbol id="sun-fill" viewBox="0 0 16 16">
+			<path
+				d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+		</symbol>
+	</svg>
+
+	<div class="top-bar text-center bg-body-tertiary d-lg-none">
+        <div class="w-100 text-center">
+			<a class="link-body-emphasis" href="/">
+				<span class="montserrat-400">ep.visto </span>
+			</a>
+		</div>
+        <button class="btn btn-emphasis" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+            <i class="bi bi-list"></i>
+        </button>
+    </div>
+
+    <div class="d-flex">
+        <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+            <div class="offcanvas-header d-lg-none">
+				<div class="w-100 text-center">
+					<span class="montserrat-400">ep.visto </span>
+                </div>
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasMenu" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column p-0 text-center">
+                <div class="logo-lg text-center my-4 d-none d-lg-block">
+                     <a class="link-body-emphasis" href="/">
+						<span class="montserrat-400">ep.visto </span>
+                    </a>
+                </div>
+                <ul class="nav flex-column mb-auto montserrat-100">
+					<li class="nav-item">
+						<a class="nav-link link-body-emphasis" href="index.html">Photography<br>Overview</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link-body-emphasis" href="#">Personal<br>Work</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link-body-emphasis" href="about.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link-body-emphasis" href="contact.html">Contact</a>
+					</li>
+                </ul>
+                <hr class="d-none d-lg-block">
+                <div class="social-icons text-center pb-3 d-none d-lg-block">
+                    <a class="link-body-emphasis" href="https://www.instagram.com/abrilpastor?igsh=cW5iY3Y0Nm5i-YTFu"><i class="bi bi-instagram me-3"></i></a>
+                    <a class="link-body-emphasis" href="contact.html"><i class="bi bi-envelope-fill"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content p-0 p-lg-4">
+			<p class="text-center montserrat-100 titular_Page mt-3">Personal Work</p>
+			<p class="text-center text-body-secondary">by Abril Pastor</p>
+
+			<div class="container-fluid p-0">
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2">
+					<div class="col">
+						<div class="gallery-item rounded" 
+							data-bs-toggle="modal" 
+							data-bs-target="#galleryModal"
+							data-titulo="Costumbrismo"
+							data-album="./img/gallery/costumbrismo/Fotoman 11.jpeg,
+							./img/gallery/costumbrismo/Fotoman 14.jpeg,
+							./img/gallery/costumbrismo/Fotoman 15.jpeg,
+							./img/gallery/costumbrismo/Fotoman 31.jpeg,
+							./img/gallery/costumbrismo/Fotoman 32.jpeg,
+							./img/gallery/costumbrismo/IMG_1215.JPG,
+							./img/gallery/costumbrismo/IMG_1244.JPG,
+							./img/gallery/costumbrismo/IMG_1446.JPG,
+							./img/gallery/costumbrismo/IMG_1454.JPG,
+							./img/gallery/costumbrismo/IMG_1458.JPG,
+							./img/gallery/costumbrismo/IMG_2820.JPG,
+							./img/gallery/costumbrismo/IMG_2828.JPG,
+							./img/gallery/costumbrismo/IMG_2829.JPG,
+							./img/gallery/costumbrismo/IMG_2840.JPG,
+							./img/gallery/costumbrismo/IMG_2842.JPG,
+							./img/gallery/costumbrismo/IMG_2843.JPG,
+							./img/gallery/costumbrismo/IMG_2844.JPG,
+							./img/gallery/costumbrismo/IMG_2848.JPG,
+							./img/gallery/costumbrismo/IMG_7056.JPG,
+							./img/gallery/costumbrismo/IMG_8108.JPG,
+							./img/gallery/costumbrismo/IMG_8110.JPG,
+							./img/gallery/costumbrismo/IMG_8112.JPG,
+							./img/gallery/costumbrismo/IMG_8133.JPG,
+							./img/gallery/costumbrismo/IMG_8135.JPG,
+							./img/gallery/costumbrismo/IMG_9310.JPG,
+							./img/gallery/costumbrismo/IMG_9312.JPG,
+							./img/gallery/costumbrismo/IMG_9317.JPG,
+							./img/gallery/costumbrismo/IMG_9319.JPG,
+							./img/gallery/costumbrismo/IMG_9320.JPG,
+							./img/gallery/costumbrismo/IMG_9324.JPG,
+							./img/gallery/costumbrismo/IMG_9327.JPG,
+							./img/gallery/costumbrismo/IMG_9330.JPG,
+							./img/gallery/costumbrismo/IMG_9333.JPG,
+							./img/gallery/costumbrismo/IMG_9334.JPG,
+							./img/gallery/costumbrismo/IMG_9336.JPG,
+							./img/gallery/costumbrismo/IMG_9337.JPG,
+							./img/gallery/costumbrismo/IMG_9342.JPG,
+							./img/gallery/costumbrismo/IMG_9344.JPG">
+                
+							<img class="w-100" src="./img/gallery/costumbrismo/5B05CD58-16C7-4BCF-BB52-201BED8CFCD8.jpg" alt="Costumbrismo">
+							
+							<div class="overlay">
+								<span class="overlay-text montserrat-400">Costumbrismo</span>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="gallery-item rounded" 
+							data-bs-toggle="modal" 
+							data-bs-target="#galleryModal"
+							data-titulo="dat0"
+							data-album="./img/gallery/dat0/Fotoman 18.jpeg,
+							./img/gallery/dat0/Fotoman 25.jpeg,
+							./img/gallery/dat0/Fotoman 26.jpeg,
+							./img/gallery/dat0/Fotoman 27.jpeg,
+							./img/gallery/dat0/Fotoman 28.jpeg,
+							./img/gallery/dat0/IMG_7058.JPG,
+							./img/gallery/dat0/IMG_7059.JPG,
+							./img/gallery/dat0/IMG_7061.JPG,
+							./img/gallery/dat0/IMG_7062.JPG,
+							./img/gallery/dat0/IMG_7063.JPG,
+							./img/gallery/dat0/IMG_7065.JPG,
+							./img/gallery/dat0/IMG_7067.JPG,
+							./img/gallery/dat0/IMG_7068.JPG,
+							./img/gallery/dat0/IMG_7069.JPG,
+							./img/gallery/dat0/IMG_7072.JPG,
+							./img/gallery/dat0/IMG_7073.JPG,
+							./img/gallery/dat0/IMG_7074.JPG,
+							./img/gallery/dat0/IMG_8109.JPG,
+							./img/gallery/dat0/IMG_8114.JPG,
+							./img/gallery/dat0/IMG_8115.JPG,
+							./img/gallery/dat0/IMG_8118.JPG,
+							./img/gallery/dat0/IMG_8120.JPG,
+							./img/gallery/dat0/IMG_8124.JPG,
+							./img/gallery/dat0/IMG_8126.JPG,
+							./img/gallery/dat0/IMG_8130.JPG,
+							./img/gallery/dat0/IMG_8138.JPG">
+							
+							<img class="w-100" src="./img/gallery/dat0/Fotoman 17.jpeg" alt="dat0">
+							
+							<div class="overlay">
+								<span class="overlay-text montserrat-400">dat0</span>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="gallery-item rounded" 
+							data-bs-toggle="modal" 
+							data-bs-target="#galleryModal"
+							data-titulo="easda cachos"
+							data-album="./img/gallery/easdaacachos/IMG_6883.JPG,
+							./img/gallery/easdaacachos/IMG_6884.JPG,
+							./img/gallery/easdaacachos/IMG_6886.JPG,
+							./img/gallery/easdaacachos/IMG_6887.JPG,
+							./img/gallery/easdaacachos/IMG_6888.JPG,
+							./img/gallery/easdaacachos/IMG_6889.JPG,
+							./img/gallery/easdaacachos/IMG_6891.JPG,
+							./img/gallery/easdaacachos/IMG_6896.JPG,
+							./img/gallery/easdaacachos/IMG_6897.JPG,
+							./img/gallery/easdaacachos/IMG_6898.JPG,
+							./img/gallery/easdaacachos/IMG_6899.JPG,
+							./img/gallery/easdaacachos/IMG_6901.JPG,
+							./img/gallery/easdaacachos/IMG_6902.JPG,
+							./img/gallery/easdaacachos/IMG_6903.JPG,
+							./img/gallery/easdaacachos/IMG_6905.JPG,
+							./img/gallery/easdaacachos/IMG_6907.JPG,
+							./img/gallery/easdaacachos/IMG_6908.JPG,
+							./img/gallery/easdaacachos/IMG_6909.JPG">
+							
+							<img class="w-100" src="./img/gallery/easdaacachos/IMG_6882.JPG" alt="easda cachos">
+							
+							<div class="overlay">
+								<span class="overlay-text montserrat-400">easda cachos</span>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="gallery-item rounded" 
+							data-bs-toggle="modal" 
+							data-bs-target="#galleryModal"
+							data-titulo="gente"
+							data-album="./img/gallery/gente/Fotoman 01.jpeg,
+							./img/gallery/gente/Fotoman 12.jpeg,
+							./img/gallery/gente/Fotoman.jpeg,
+							./img/gallery/gente/IMG_1213.JPG,
+							./img/gallery/gente/IMG_1226.JPG,
+							./img/gallery/gente/IMG_1237.JPG,
+							./img/gallery/gente/IMG_1459.JPG,
+							./img/gallery/gente/IMG_2823.JPG,
+							./img/gallery/gente/IMG_2837.JPG,
+							./img/gallery/gente/IMG_2841.JPG,
+							./img/gallery/gente/IMG_2853.JPG,
+							./img/gallery/gente/IMG_7054.JPG,
+							./img/gallery/gente/IMG_7055.JPG,
+							./img/gallery/gente/IMG_7076.JPG,
+							./img/gallery/gente/IMG_7078.JPG,
+							./img/gallery/gente/IMG_8125.JPG,
+							./img/gallery/gente/IMG_8131.JPG,
+							./img/gallery/gente/IMG_9314.JPG,
+							./img/gallery/gente/IMG_9315.JPG,
+							./img/gallery/gente/IMG_9316.JPG,
+							./img/gallery/gente/IMG_9318.JPG,
+							./img/gallery/gente/IMG_9322.JPG,
+							./img/gallery/gente/IMG_9323.JPG,
+							./img/gallery/gente/IMG_9325.JPG,
+							./img/gallery/gente/IMG_9329.JPG,
+							./img/gallery/gente/IMG_9331.JPG,
+							./img/gallery/gente/IMG_9335.JPG,
+							./img/gallery/gente/IMG_9343.JPG">
+							
+							<img class="w-100" src="./img/gallery/gente/48E49311-D90A-49F6-9646-29E32056DCDD.jpg" alt="gente">
+							
+							<div class="overlay">
+								<span class="overlay-text montserrat-400">gente</span>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="gallery-item rounded" 
+							data-bs-toggle="modal" 
+							data-bs-target="#galleryModal"
+							data-titulo="Madrid sin color"
+							data-album="./img/gallery/madridsincolor/IMG_7278.JPG,
+							./img/gallery/madridsincolor/IMG_7280.JPG,
+							./img/gallery/madridsincolor/IMG_7281.JPG,
+							./img/gallery/madridsincolor/IMG_7283.JPG,
+							./img/gallery/madridsincolor/IMG_7285.JPG,
+							./img/gallery/madridsincolor/IMG_7287.JPG,
+							./img/gallery/madridsincolor/IMG_7288.JPG,
+							./img/gallery/madridsincolor/IMG_7289.JPG,
+							./img/gallery/madridsincolor/IMG_7290.JPG,
+							./img/gallery/madridsincolor/IMG_7291.JPG,
+							./img/gallery/madridsincolor/IMG_7292.JPG,
+							./img/gallery/madridsincolor/IMG_7294.JPG,
+							./img/gallery/madridsincolor/IMG_7295.JPG,
+							./img/gallery/madridsincolor/IMG_7297.JPG">
+							
+							<img class="w-100" src="./img/gallery/madridsincolor/IMG_7275.JPG" alt="Madrid sin color">
+							
+							<div class="overlay">
+								<span class="overlay-text montserrat-400">Madrid sin color</span>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="gallery-item rounded" 
+							data-bs-toggle="modal" 
+							data-bs-target="#galleryModal"
+							data-titulo="Salitre"
+							data-album="./img/gallery/salitre/IMG_1431.JPG,
+							./img/gallery/salitre/IMG_1432.JPG,
+							./img/gallery/salitre/IMG_1433.JPG,
+							./img/gallery/salitre/IMG_1434.JPG,
+							./img/gallery/salitre/IMG_1435.JPG,
+							./img/gallery/salitre/IMG_1436.JPG,
+							./img/gallery/salitre/IMG_1443.JPG,
+							./img/gallery/salitre/IMG_1448.JPG,
+							./img/gallery/salitre/IMG_1449.JPG,
+							./img/gallery/salitre/IMG_1450.JPG,
+							./img/gallery/salitre/IMG_1451.JPG,
+							./img/gallery/salitre/IMG_1453.JPG,
+							./img/gallery/salitre/IMG_1456.JPG,
+							./img/gallery/salitre/IMG_1457.JPG,
+							./img/gallery/salitre/IMG_1464.JPG,
+							./img/gallery/salitre/IMG_1465.JPG">
+							
+							<img class="w-100" src="./img/gallery/salitre/IMG_1431.JPG" alt="Salitre">
+							<img class="d-none" src="./img/gallery/salitre/IMG_1432.JPG" alt="Salitre">							
+							<div class="overlay">
+								<span class="overlay-text montserrat-400">Salitre</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+
+	<!-- Pie de pagina -->
+	 <div class="container-fluid bg-body-secondary py-2 fixed-bottom border-top">
+		<div class="container">
+			<div class="d-flex justify-content-between align-items-center">
+				<ul class="navbar-nav flex-row">
+					<li class="d-flex flex-row align-items-center montserrat-400" style="font-size: 0.75rem;">©2025 - Abril <b>Pastor</b></li>
+				</ul>
+				<div class="d-grid gap-2 d-flex justify-content-md-end">
+					<!-- Boton control theme -->
+					<div class="dropup">
+						<button class="btn px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme"
+							type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static">
+							<svg class="bi my-1 theme-icon-active" width="22" height="22" fill="currentColor">
+								<use href="#circle-half"></use>
+							</svg>
+						</button>
+
+						<ul class="dropdown-menu dropdown-menu-end px-1" aria-labelledby="bd-theme">
+							<li>
+								<button type="button" class="dropdown-item d-flex align-items-center"
+									data-bs-theme-value="light">
+									<svg class="bi theme-icon" width="16" height="16" fill="currentColor">
+										<use href="#sun-fill"></use>
+									</svg>
+									Light
+								</button>
+							</li>
+							<li>
+								<button type="button" class="dropdown-item d-flex align-items-center"
+									data-bs-theme-value="dark">
+									<svg class="bi me-2 theme-icon" width="16" height="16" fill="currentColor">
+										<use href="#moon-stars-fill"></use>
+									</svg>
+									Dark
+								</button>
+							</li>
+							<li>
+								<button type="button" class="dropdown-item d-flex align-items-center active"
+									data-bs-theme-value="auto">
+									<svg class="bi me-2 theme-icon" width="16" height="16" fill="currentColor">
+										<use href="#circle-half"></use>
+									</svg>
+									Auto
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Carrusel de imagenes -->
+	<div class="modal fade" id="galleryModal" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-fullscreen">
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="montserrat-400">ep.visto </span>
+					<p class="modal-title ps-2"></p>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div id="galleryCarousel" class="carousel slide">
+						<div class="carousel-inner">
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Anterior</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Siguiente</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+	<!-- Desactiva el zoom en las pantallas tactiles -->
+	<script type="text/javascript">
+		document.addEventListener('touchmove', function (event) {
+		  if (event.scale !== 1) { event.preventDefault(); }
+		}, { passive: false });
+	</script>
+
+	<!-- Carga dinamica del carrusel con las imagenes indicadas en data-album -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const galleryModal = document.getElementById('galleryModal');
+			
+			// Solo necesitamos añadir el listener una vez, cuando se prepara el modal
+			galleryModal.addEventListener('show.bs.modal', function (event) {
+				
+				// 1. Identificar qué miniatura se ha clickeado
+				const triggerElement = event.relatedTarget;
+				
+				// 2. Obtener los datos del álbum desde los atributos data-
+				const albumTitle = triggerElement.getAttribute('data-titulo');
+				const albumUrlsString = triggerElement.getAttribute('data-album');
+				console.log(albumTitle);
+				
+				// Si no hay data-album, no hacemos nada.
+				if (!albumUrlsString) {
+					return;
+				}
+
+				// 3. Convertir el string de URLs en un array de URLs
+				const imageUrls = albumUrlsString.split(',').map(url => url.trim());
+				
+				// 4. Seleccionar los elementos del modal que vamos a modificar
+				const modalTitle = galleryModal.querySelector('.modal-title');
+				const carouselInner = galleryModal.querySelector('.carousel-inner');
+				const carouselControls = galleryModal.querySelectorAll('.carousel-control-prev, .carousel-control-next');
+
+				// 5. Actualizar el título del modal
+				modalTitle.textContent = albumTitle;
+				
+				// 6. Limpiar el contenido del carrusel anterior
+				carouselInner.innerHTML = '';
+				
+				// 7. Crear y añadir cada imagen al carrusel
+				imageUrls.forEach((url, index) => {
+					const carouselItem = document.createElement('div');
+					// La primera imagen del array debe tener la clase 'active' para que el carrusel funcione
+					carouselItem.className = `carousel-item ${index === 0 ? 'active' : ''}`;
+					
+					carouselItem.innerHTML = `
+						<img src="${url}" class="d-block w-100" alt="Imagen ${index + 1} del álbum ${albumTitle}">
+					`;
+					
+					carouselInner.appendChild(carouselItem);
+				});
+
+				// 8. Ocultar los botones de control si solo hay una imagen en el álbum
+				if (imageUrls.length <= 1) {
+					carouselControls.forEach(control => control.style.display = 'none');
+				} else {
+					carouselControls.forEach(control => control.style.display = 'block');
+				}
+			});
+		});
+		</script>
+</body>
+
+</html>
